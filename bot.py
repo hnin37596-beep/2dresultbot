@@ -6,7 +6,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'data'])
 async def send_data(message: types.Message):
-    url = 'https://script.google.com/macros/s/AKfycbwYJTshdlnVtgxfOKEZPOxNtczkxalN2ivsf2AGHVBb_yzU-WEzPTx7llEiyXxKmldb/exec'
+    url = 'https://script.google.com/macros/s/AKfycbzJLxISsWEyBfyhglvh08xGN3emkZrUVA5mcldnVs_C_kSzc1DdQUQ7n47jeCWoCj4CoQ/exec'
     data = requests.get(url).json()
     latest_data = data[-5:] # နောက်ဆုံး ၅ ခု
     msg = "📊 ၂D ရလဒ်များ:\n\n"
