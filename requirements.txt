@@ -1,4 +1,3 @@
 aiogram==3.10.0
 requests
 aiohttp
-pydantic==2.5.3
